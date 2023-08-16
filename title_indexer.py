@@ -4,7 +4,7 @@ import json
 
 indexed_titles = {}
 
-with open("test_links.txt", 'r') as indexed_links_f:
+with open("found_links.txt", 'r') as indexed_links_f:
     for link in indexed_links_f.readlines():
         link = link.strip()
         content = requests.get(link).content
